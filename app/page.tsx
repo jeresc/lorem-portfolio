@@ -3,6 +3,7 @@ import {useLayoutEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import Lenis from '@studio-freight/lenis'
+import {Hero} from '@/components/hero'
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -16,5 +17,9 @@ export default function Home() {
 
     gsap.ticker.lagSmoothing(0)
   })
-  return <main></main>
+  return (
+    <main>
+      <Hero />
+    </main>
+  )
 }

@@ -21,7 +21,9 @@ interface RootLayoutProps {
 export default function RootLayout({children}: Readonly<RootLayoutProps>) {
   return (
     <html lang='en'>
-      <body className={`${overusedGrotesk.variable} font-overused-grotesk`}>
+      <body
+        className={`${overusedGrotesk.variable} bg-accent-200 font-overused-grotesk`}
+      >
         <svg className='pointer-events-none absolute cursor-none'>
           <filter id='grainy'>
             <feTurbulence type='turbulence' baseFrequency='0.5'></feTurbulence>

@@ -10,13 +10,13 @@ export function Preloader() {
     () => {
       const tl = gsap.timeline({
         defaults: {
-          duration: 2,
+          duration: 1.5,
           ease: 'power2.inOut',
         },
       })
 
       tl.from('span', {y: 60, stagger: 0.2, duration: 1})
-        .to(preloader.current, {y: '-100%'}, '+=0.5')
+        .to(preloader.current, {y: '-=100%', ease: 'power4.in'}, '+=0.5')
         .to('span', {y: -60, stagger: 0.2}, '<')
     },
     {scope: preloader},
