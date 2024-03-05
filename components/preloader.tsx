@@ -37,10 +37,10 @@ export function Preloader() {
     >
       <div className='flex h-full flex-col items-center justify-center'>
         <p className='overflow-hidden'>
-          <span className='flex translate-y-[40px]'>Lorem Ipsum</span>
+          <span className='flex translate-y-[100%]'>Lorem Ipsum</span>
         </p>
         <p className='overflow-hidden text-accent-500'>
-          <span className='flex translate-y-[40px]'>
+          <span className='flex translate-y-[100%]'>
             © Folio {new Date().getFullYear()}
           </span>
         </p>
