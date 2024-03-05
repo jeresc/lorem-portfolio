@@ -7,6 +7,14 @@ body {
   min-height: 100vh;
 }
 
+main {
+  scrollbar-gutter: stable;
+}
+
+.link-text {
+  font-size: 1.125rem;
+}
+
 body:before {
   filter: url(#grainy);
 }
@@ -81,6 +89,10 @@ h5 {
   text-wrap: balance;
   line-height: 96.5%;
   letter-spacing: -0.0275em;
+}
+
+.spacer {
+  @apply h-[100svh] sm:h-[100svh];
 }
 
 .underline-transition:hover:before {

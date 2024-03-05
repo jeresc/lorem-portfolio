@@ -2,6 +2,7 @@ import type {Metadata} from 'next'
 import local from 'next/font/local'
 import './globals.css'
 import {Preloader} from '@/components/preloader'
+import {Header} from '@/components/header'
 
 const overusedGrotesk = local({
   src: '../fonts/OverusedGrotesk-VF.woff2',
@@ -22,7 +23,7 @@ export default function RootLayout({children}: Readonly<RootLayoutProps>) {
   return (
     <html lang='en'>
       <body
-        className={`${overusedGrotesk.variable} bg-accent-200 font-overused-grotesk`}
+        className={`${overusedGrotesk.variable} bg-accent-200 font-overused-grotesk antialiased`}
       >
         <svg className='pointer-events-none absolute cursor-none'>
           <filter id='grainy'>
@@ -31,6 +32,7 @@ export default function RootLayout({children}: Readonly<RootLayoutProps>) {
           </filter>
         </svg>
         <Preloader />
+        <Header />
         {children}
       </body>
     </html>

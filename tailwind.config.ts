@@ -8,7 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screen: {
+        xs: '320px',
+        '2xl': '1440px',
+        '3xl': '1920px',
+        '4xl': '2260px',
+      },
       fontSize: {
+        xs: '.875rem',
         base: '1.125rem',
         h1: '3.5rem',
         h2: '3rem',
@@ -21,6 +28,10 @@ const config: Config = {
       letterSpacing: {
         heading: '-.0275em',
         tighter: '92.5%',
+        base: '130%',
+      },
+      transitionTimingFunction: {
+        expo: 'cubic-bezier(.16,1,.3,1)',
       },
       fontFamily: {
         'overused-grotesk': ['var(--font-overused-grotesk)'],
@@ -29,7 +40,8 @@ const config: Config = {
         transparent: 'transparent',
         'secondary-400': '#080807',
         'secondary-300': '#393632',
-        'secondary-100': '#6b645c',
+        'secondary-100': '#6B645C',
+        'secondary-50': '#A29E9A',
         'accent-500': '#BFBFB1',
         'accent-300': '#DDDDD5',
         'accent-200': '#E8E8E3',

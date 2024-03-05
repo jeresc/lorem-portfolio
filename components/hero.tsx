@@ -1,6 +1,7 @@
 'use client'
 import {useGSAP} from '@gsap/react'
 import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import React, {useRef} from 'react'
 
 const displayTitle = (text: string) => {
@@ -27,19 +28,33 @@ export function Hero() {
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger)
+
       const tl = gsap.timeline({
         delay: 3.2,
         defaults: {duration: 1, ease: 'power2.out'},
       })
       tl.from('.character', {y: '+=100%', stagger: 0.01})
         .from('.circle', {scale: 0.4, opacity: 0}, 0)
-        .from('p', {opacity: 0, y: '+=100%'}, '.4')
+        .from('p', {opacity: 0, y: '+=60%'}, '.4')
+
+      const vanish = gsap.timeline({
+        scrollTrigger: {
+          trigger: container.current,
+          scrub: true,
+          start: '0 start',
+          end: '27% start',
+        },
+        ease: 'power2.in',
+      })
+
+      vanish.to('header', {opacity: 0, y: '-=100px'}, 0)
     },
     {scope: container},
   )
   return (
-    <section className='mb-[-100svh] py-0' ref={container}>
-      <div className='section-padding sticky top-0 flex h-svh items-end sm:items-center '>
+    <section className='mb-[-100vh] py-0' ref={container}>
+      <div className='section-padding sticky top-0 flex h-svh items-end sm:items-center'>
         <svg
           width='1186'
           height='1186'
@@ -103,6 +118,7 @@ export function Hero() {
           </header>
         </div>
       </div>
+      <div className='h-svh'></div>
     </section>
   )
 }
