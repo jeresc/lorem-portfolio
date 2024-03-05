@@ -3,25 +3,7 @@ import {useGSAP} from '@gsap/react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import React, {useRef} from 'react'
-
-const displayTitle = (text: string) => {
-  return text.split('').map((c, i) => {
-    if (c === ' ')
-      return (
-        <span key={i} className='inline-block'>
-          &nbsp;
-        </span>
-      )
-    return (
-      <span
-        key={i}
-        className='relative inline-flex overflow-hidden pb-1 sm:pb-3'
-      >
-        <span className='character'>{c}</span>
-      </span>
-    )
-  })
-}
+import {DisplayText} from './display-text'
 
 export function Hero() {
   const container = useRef(null)
@@ -34,7 +16,7 @@ export function Hero() {
         delay: 3.2,
         defaults: {duration: 1, ease: 'power2.out'},
       })
-      tl.from('.character', {y: '+=100%', stagger: 0.01})
+      tl.from('.hero-title', {y: '+=100%', stagger: 0.01})
         .from('.circle', {scale: 0.4, opacity: 0}, 0)
         .from('p', {opacity: 0, y: '+=60%'}, '.4')
 
@@ -98,17 +80,13 @@ export function Hero() {
                 id='title-line'
                 className='4xl:pl-[21%] sm:pl-[13%] 2xl:pl-[16%]'
               >
-                <span className='inline-block'>
-                  {displayTitle("Hi there, I'm")}
-                </span>
+                <DisplayText text="Hi there, I'm" id='hero-title' />
               </span>
               <span
                 id='title-line'
                 className='4xl:pr-[21%] sm:pr-[13%] sm:text-right 2xl:pr-[16%]'
               >
-                <span className='inline-block'>
-                  {displayTitle('Lorem Ipsum.')}
-                </span>
+                <DisplayText text='Lorem Ipsum' id='hero-title' />
               </span>
             </h1>
             <p className='max-w-[38ch] pl-1 text-start text-base font-medium text-secondary-100 sm:pl-0 sm:text-center xl:text-h6 2xl:text-h5'>

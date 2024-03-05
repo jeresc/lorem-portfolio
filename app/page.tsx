@@ -1,10 +1,12 @@
 'use client'
-import {useLayoutEffect} from 'react'
+import {AboutMe} from '@/components/about-me'
+import {Hero} from '@/components/hero'
+import {Services} from '@/components/services'
+import {SidebarButton} from '@/components/sidebar-button'
+import Lenis from '@studio-freight/lenis'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import Lenis from '@studio-freight/lenis'
-import {Hero} from '@/components/hero'
-import {SidebarButton} from '@/components/sidebar-button'
+import {useLayoutEffect} from 'react'
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -21,10 +23,11 @@ export default function Home() {
 
   return (
     <main>
-      <SidebarButton hidden={false} />
+      <SidebarButton hidden={true} />
       <Hero />
       <div className='overflow-x-clip" relative z-20 min-h-screen w-full'>
-        <section className='section-padding min-h-screen rounded-t-3xl bg-secondary-400'></section>
+        <AboutMe />
+        <Services />
       </div>
     </main>
   )

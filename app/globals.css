@@ -37,6 +37,29 @@ body:after {
   padding: 3.5rem 1.5rem;
 }
 
+.section-heading {
+  font-size: clamp(3.5rem, 2.3571rem + 4.5143vi, 10.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.body-text {
+  font-size: 1.25rem;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 0.5s;
+  text-wrap: pretty;
+  line-height: 130%;
+}
+
+@media (min-width: 768px) {
+  .body-text {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 640px) {
   .section-padding {
     padding: 5% 4%;
