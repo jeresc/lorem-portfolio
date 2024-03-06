@@ -3,6 +3,7 @@ import {AboutMe} from '@/components/about-me'
 import {Hero} from '@/components/hero'
 import {Services} from '@/components/services'
 import {SidebarButton} from '@/components/sidebar-button'
+import {Works} from '@/components/works'
 import Lenis from '@studio-freight/lenis'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
@@ -28,6 +29,7 @@ export default function Home() {
       <div className='overflow-x-clip" relative z-20 min-h-screen w-full'>
         <AboutMe />
         <Services />
+        <Works />
       </div>
     </main>
   )

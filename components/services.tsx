@@ -63,19 +63,8 @@ export function Services() {
             style={{top: 'calc(20vh + 0vh)', marginBottom: '24vh'}}
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
-              {/* <img */}
-              {/*   alt='' */}
-              {/*   loading='lazy' */}
-              {/*   width='32' */}
-              {/*   height='32' */}
-              {/*   decoding='async' */}
-              {/*   data-nimg='1' */}
-              {/*   className='h-6 w-6 sm:h-7 sm:w-7 2xl:h-8 2xl:w-8' */}
-              {/*   style='color:transparent' */}
-              {/*   src='//images.ctfassets.net/fwy0yv14lkat/3OTKoEZctLHsU75qKdenDH/a241fd9d6e8c8f0622811fe2bed44b87/Shape.svg' */}
-              {/* /> */}
               <Star />
-              <h3 className='3xl:py-9 py-7 text-left text-h4 font-bold text-accent-500  sm:py-5 sm:text-h3 md:py-4 md:text-h2  lg:text-h1 '>
+              <h3 className='py-7 text-left text-h4 font-bold text-accent-500 sm:py-5  sm:text-h3 md:py-4 md:text-h2 lg:text-h1  3xl:py-9 '>
                 Web Development
               </h3>
             </div>
@@ -96,8 +85,8 @@ export function Services() {
                   3D Development
                 </span>
               </div>
-              <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30 '>
-                01.
+              <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30'>
+                <span>01. </span>
               </span>
             </div>
           </div>
@@ -106,19 +95,8 @@ export function Services() {
             style={{top: 'calc(20vh + 8vh)', marginBottom: '16vh'}}
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
-              {/* <img */}
-              {/*   alt='' */}
-              {/*   loading='lazy' */}
-              {/*   width='32' */}
-              {/*   height='32' */}
-              {/*   decoding='async' */}
-              {/*   data-nimg='1' */}
-              {/*   className='h-6 w-6 sm:h-7 sm:w-7 2xl:h-8 2xl:w-8' */}
-              {/*   style='color:transparent' */}
-              {/*   src='//images.ctfassets.net/fwy0yv14lkat/5X88SBFFc4hVAjMYmFK4js/7c8ae3f8120db2ff6f7ee315d3096266/Q8.svg' */}
-              {/* /> */}
               <Hexagon />
-              <h3 className='3xl:py-9 py-7 text-left text-h4 font-bold text-accent-500  sm:py-5 sm:text-h3 md:py-4 md:text-h2  lg:text-h1 '>
+              <h3 className='py-7 text-left text-h4 font-bold text-accent-500 sm:py-5  sm:text-h3 md:py-4 md:text-h2 lg:text-h1  3xl:py-9 '>
                 Web Design
               </h3>
             </div>
@@ -136,7 +114,7 @@ export function Services() {
                 <span className='font-bold text-accent-500'>UX Writing</span>
               </div>
               <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30 '>
-                02.
+                <span>02. </span>
               </span>
             </div>
           </div>
@@ -146,18 +124,7 @@ export function Services() {
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
               <Triangle />
-              {/* <img */}
-              {/*   alt='' */}
-              {/*   loading='lazy' */}
-              {/*   width='32' */}
-              {/*   height='32' */}
-              {/*   decoding='async' */}
-              {/*   data-nimg='1' */}
-              {/*   className='h-6 w-6 sm:h-7 sm:w-7 2xl:h-8 2xl:w-8' */}
-              {/*   style='color:transparent' */}
-              {/*   src='//images.ctfassets.net/fwy0yv14lkat/4tOmYgqGG5ImynJhHuG6k6/bfdee331cc56aa0f1ab40a4c83510a28/L9.svg' */}
-              {/* /> */}
-              <h3 className='3xl:py-9 py-7 text-left text-h4 font-bold text-accent-500  sm:py-5 sm:text-h3 md:py-4 md:text-h2  lg:text-h1 '>
+              <h3 className='py-7 text-left text-h4 font-bold text-accent-500 sm:py-5  sm:text-h3 md:py-4 md:text-h2 lg:text-h1  3xl:py-9 '>
                 SEO
               </h3>
             </div>

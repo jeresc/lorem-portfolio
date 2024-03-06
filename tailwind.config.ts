@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screen: {
+      screens: {
         xs: '320px',
         '2xl': '1440px',
         '3xl': '1920px',
@@ -28,10 +28,10 @@ const config: Config = {
       },
       lineHeight: {
         base: '130%',
+        tighter: '92.5%',
       },
       letterSpacing: {
         heading: '-.0275em',
-        tighter: '92.5%',
       },
       transitionTimingFunction: {
         expo: 'cubic-bezier(.16,1,.3,1)',
