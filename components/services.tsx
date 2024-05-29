@@ -60,7 +60,7 @@ export function Services() {
         <div className='mt-12 flex flex-col justify-between gap-y-16'>
           <div
             className='sticky top-0 border-t border-t-secondary-300 bg-secondary-400 px-2 '
-            style={{top: 'calc(20vh + 0vh)', marginBottom: '24vh'}}
+            style={{top: 'calc(20vh + 0vh)', marginBottom: '17.25em'}}
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
               <Star />
@@ -85,14 +85,14 @@ export function Services() {
                   3D Development
                 </span>
               </div>
-              <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30'>
+              <span className='absolute bottom-0  -z-10 flex  w-full items-end justify-end  text-number font-extrabold leading-tighter text-secondary-300 opacity-30'>
                 <span>01. </span>
               </span>
             </div>
           </div>
           <div
             className='sticky top-0 border-t border-t-secondary-300 bg-secondary-400 px-2 '
-            style={{top: 'calc(20vh + 8vh)', marginBottom: '16vh'}}
+            style={{top: 'calc(20vh + 5.75em)', marginBottom: '11.5em'}}
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
               <Hexagon />
@@ -113,14 +113,14 @@ export function Services() {
                 <span className='font-bold text-accent-500'>Wireframing</span>
                 <span className='font-bold text-accent-500'>UX Writing</span>
               </div>
-              <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30 '>
+              <span className='absolute bottom-0  -z-10 flex  w-full items-end justify-end  text-number font-extrabold leading-tighter text-secondary-300 opacity-30 '>
                 <span>02. </span>
               </span>
             </div>
           </div>
           <div
             className='sticky top-0 border-t border-t-secondary-300 bg-secondary-400 px-2 '
-            style={{top: 'calc(20vh + 16vh)', marginBottom: '8vh'}}
+            style={{top: 'calc(20vh + 11.5em)', marginBottom: '5.75em'}}
           >
             <div className='flex items-center gap-x-4 md:gap-x-6'>
               <Triangle />
@@ -143,7 +143,7 @@ export function Services() {
                   SEO Audits &amp; Analysis
                 </span>
               </div>
-              <span className='leading-tighter absolute  bottom-0 -z-10  flex w-full items-end  justify-end text-number font-extrabold text-secondary-300 opacity-30 '>
+              <span className='absolute bottom-0  -z-10 flex  w-full items-end justify-end  text-number font-extrabold leading-tighter text-secondary-300 opacity-30 '>
                 03.{' '}
               </span>
             </div>
